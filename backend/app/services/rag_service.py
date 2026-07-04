@@ -123,6 +123,8 @@ def generate_itinerary(req: ItineraryRequest) -> ItineraryResponse:
                         best_time=p.get("best_time"),
                         est_cost_inr=p.get("est_cost_inr"),
                         distance_km=p.get("distance_km"),
+                        lat=p.get("lat"),
+                        lon=p.get("lon"),
                         tags=p.get("tags", []),
                     )
                     for p in day_places

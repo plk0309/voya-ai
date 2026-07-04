@@ -38,3 +38,7 @@ export function runGroupConsensus({ city, members, candidateActivities }) {
     candidate_activities: candidateActivities,
   });
 }
+
+export function geocodePlace(query) {
+  return post("/api/location/geocode", { query });
+}

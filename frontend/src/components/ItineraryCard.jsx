@@ -1,4 +1,5 @@
 import { Camera, Clock, MapPin, Wallet } from "lucide-react";
+import MapView from "./MapView";
 
 export default function ItineraryCard({ itinerary, loading, error }) {
   if (loading) {
@@ -80,6 +81,17 @@ export default function ItineraryCard({ itinerary, loading, error }) {
               💡 {firstPlace.why_it_matches}
             </p>
           )}
+        </div>
+      )}
+
+      {firstDay.places.some((p) => p.lat && p.lon) && (
+        <div className="mb-4">
+          <MapView
+            places={firstDay.places
+              .filter((p) => p.lat && p.lon)
+              .map((p) => ({ name: p.name, lat: p.lat, lon: p.lon }))}
+            heightClass="h-48"
+          />
         </div>
       )}
 

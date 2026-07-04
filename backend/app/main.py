@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
-from app.routers import itinerary, budget, group
+from app.routers import itinerary, budget, group, location
 
 app = FastAPI(
     title="VoyaAI API",
@@ -21,6 +21,7 @@ app.add_middleware(
 app.include_router(itinerary.router)
 app.include_router(budget.router)
 app.include_router(group.router)
+app.include_router(location.router)
 
 
 @app.get("/")

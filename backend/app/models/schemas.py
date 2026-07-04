@@ -20,6 +20,8 @@ class Place(BaseModel):
     best_time: Optional[str] = None
     est_cost_inr: Optional[str] = None
     distance_km: Optional[float] = None
+    lat: Optional[float] = None
+    lon: Optional[float] = None
     tags: List[str] = []
 
 

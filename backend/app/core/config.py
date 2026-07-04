@@ -11,7 +11,6 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 1440
 
-    google_maps_api_key: str = ""
     openweather_api_key: str = ""
 
     frontend_origin: str = "http://localhost:5173"
