@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Core palette - dark violet/indigo, matches the VoyaAI mockup */
+  --color-bg: #0f0b1e;
+  --color-surface: #171226;
+  --color-surface-hover: #1e1832;
+  --color-border: #2a2340;
+  --color-primary: #7c3aed;
+  --color-primary-hover: #8b5cf6;
+  --color-accent-teal: #14b8a6;
+  --color-accent-gold: #eab308;
+  --color-text-primary: #f4f2f9;
+  --color-text-secondary: #a79fc2;
+  --color-text-muted: #6b6485;
+
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}

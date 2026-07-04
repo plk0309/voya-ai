@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Nahargarh Stepwell Sunrise Point",
+    "category": "viewpoint",
+    "description": "A lesser-known stepwell near Nahargarh Fort offering panoramic sunrise views over the Pink City, almost empty before 8 AM.",
+    "best_time": "6:00 AM - 7:30 AM",
+    "est_cost_inr": "0-50",
+    "distance_km": 12,
+    "tags": ["photography", "crowd_averse", "sunrise", "free"]
+  },
+  {
+    "name": "Sireh Deori Bazaar Rooftop Cafe",
+    "category": "cafe",
+    "description": "A locals-only rooftop cafe behind Hawa Sadak serving masala chai with a direct view of the City Palace, rarely visited by tourists.",
+    "best_time": "5:00 PM - 7:00 PM",
+    "est_cost_inr": "100-200",
+    "distance_km": 3,
+    "tags": ["photography", "food", "relaxation", "crowd_averse"]
+  },
+  {
+    "name": "LMB Street Food Walk",
+    "category": "street_food",
+    "description": "A stretch of stalls near Johari Bazaar known for pyaaz kachori and lassi, best experienced early evening on weekdays.",
+    "best_time": "6:00 PM - 8:00 PM",
+    "est_cost_inr": "150-300",
+    "distance_km": 2,
+    "tags": ["street_food", "food", "local_culture"]
+  },
+  {
+    "name": "Panna Meena Ka Kund Stepwell",
+    "category": "heritage",
+    "description": "A quiet symmetrical stepwell near Amer Fort, far less crowded than the fort itself and excellent for architectural photography.",
+    "best_time": "8:00 AM - 10:00 AM",
+    "est_cost_inr": "0",
+    "distance_km": 14,
+    "tags": ["photography", "heritage", "crowd_averse"]
+  },
+  {
+    "name": "Anokhi Museum of Hand Printing",
+    "category": "workshop",
+    "description": "A small museum and working studio in a restored haveli showing traditional block-printing techniques, with live artisan demos.",
+    "best_time": "10:00 AM - 4:00 PM",
+    "est_cost_inr": "50-100",
+    "distance_km": 8,
+    "tags": ["culture", "artisan", "crowd_averse"]
+  },
+  {
+    "name": "Sambhar Lake Sunset Point",
+    "category": "nature",
+    "description": "India's largest saline lake, roughly an hour from the city, known for flamingo sightings and dramatic sunset colors on the salt flats.",
+    "best_time": "4:30 PM - 6:30 PM",
+    "est_cost_inr": "200-400",
+    "distance_km": 65,
+    "tags": ["photography", "nature", "crowd_averse"]
+  },
+  {
+    "name": "Sisodia Rani Garden",
+    "category": "garden",
+    "description": "A terraced Rajput garden with fountains and murals, quiet on weekday mornings and a favorite of local photography students.",
+    "best_time": "9:00 AM - 11:00 AM",
+    "est_cost_inr": "50",
+    "distance_km": 10,
+    "tags": ["photography", "relaxation", "crowd_averse"]
+  },
+  {
+    "name": "Masala Chowk Local Food Hub",
+    "category": "street_food",
+    "description": "A curated open-air food court near Albert Hall run by local vendors, cheaper and less touristy than nearby restaurants.",
+    "best_time": "7:00 PM - 9:30 PM",
+    "est_cost_inr": "150-250",
+    "distance_km": 4,
+    "tags": ["street_food", "food", "budget"]
+  }
+]
