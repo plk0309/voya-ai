@@ -39,6 +39,7 @@ export default function App() {
   const [itinerary, setItinerary] = useState(null);
   const [itineraryLoading, setItineraryLoading] = useState(true);
   const [itineraryError, setItineraryError] = useState(null);
+  const [currentCity, setCurrentCity] = useState(DEFAULT_TRIP.city);
 
   const [budget, setBudget] = useState(null);
   const [budgetLoading, setBudgetLoading] = useState(true);
@@ -49,6 +50,7 @@ export default function App() {
     setItineraryLoading(true);
     setBudgetLoading(true);
     setItineraryError(null);
+    setCurrentCity(trip.city);
     try {
       const [itineraryRes, budgetRes] = await Promise.all([
         generateItinerary(trip),
@@ -100,6 +102,7 @@ export default function App() {
           onPromptChange={setPrompt}
           onSubmit={handlePromptSubmit}
           userName="Palak"
+          city={currentCity}
         />
 
         <main className="flex-1 p-6 flex flex-col gap-6 max-w-6xl w-full mx-auto">

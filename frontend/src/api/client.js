@@ -42,3 +42,12 @@ export function runGroupConsensus({ city, members, candidateActivities }) {
 export function geocodePlace(query) {
   return post("/api/location/geocode", { query });
 }
+
+export async function getCurrentWeather(city) {
+  const res = await fetch(`${BASE_URL}/api/weather/current?city=${encodeURIComponent(city)}`);
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`Weather request failed: ${res.status} ${text}`);
+  }
+  return res.json();
+}

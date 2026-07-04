@@ -1,6 +1,7 @@
 import { Send, Bell } from "lucide-react";
+import WeatherWidget from "./WeatherWidget";
 
-export default function TopBar({ prompt, onPromptChange, onSubmit, userName }) {
+export default function TopBar({ prompt, onPromptChange, onSubmit, userName, city = "Jaipur" }) {
   return (
     <div className="flex items-center gap-4 px-6 py-4 border-b border-(--color-border) bg-(--color-surface)">
       <form
@@ -23,6 +24,8 @@ export default function TopBar({ prompt, onPromptChange, onSubmit, userName }) {
           <Send size={15} className="text-white" />
         </button>
       </form>
+
+      <WeatherWidget city={city} />
 
       <button className="relative w-9 h-9 rounded-lg border border-(--color-border) flex items-center justify-center text-(--color-text-secondary) hover:bg-(--color-surface-hover) transition-colors shrink-0">
         <Bell size={16} />
